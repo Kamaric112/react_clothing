@@ -51,6 +51,8 @@ body {
 	position: sticky;
 	background-color: #fff;
 	top: calc(50% - 205px);
+  display: flex;
+  flex-direction: column;
 }
 
 .avatar-wrapper button {
@@ -61,13 +63,7 @@ body {
   padding: 10px;
   width: 200px;
   border-radius: 20px;
-  margin-left: 10px;
-  font-size: 1.5rem;
-  color: black;
-}
-.avatar-wrapper button:hover {
-  cursor: pointer;
-  background-color: #0baf94;
+
 }
 
 .list-section {
@@ -102,17 +98,4 @@ body {
 
 .list img:hover {
   background-color: #798885;
-}
-
-@media (max-width: 1150px) {
-	.list {
-		max-width: 700px;
-	}
-	.total-style {
-		flex-direction: column;
-		align-items: center;
-	}
-	.avatar-wrapper {
-		padding: 0px;
-	}
 }

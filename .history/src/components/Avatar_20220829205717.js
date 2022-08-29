@@ -1,7 +1,7 @@
 import React from 'react'
 import Part from './Part'
 
-function Avatar({eyes,body,layer_1,layer_2,layer_3,mouths,glasses,hair,earrings,hats,eyebrows,randomize}) {
+function Avatar({eyes,body,layer_1,layer_2,layer_3,mouths,glasses,hair,earrings,hats,eyebrows}) {
   return (
     <div>
       <div className="avatar-wrapper">
@@ -17,9 +17,10 @@ function Avatar({eyes,body,layer_1,layer_2,layer_3,mouths,glasses,hair,earrings,
           <Part type="hair" position="3" index = {hair}/>
           <Part type="earrings" position="3" index = {earrings}/>
           <Part type="hats" position="4" index = {hats}/>
-          <Part type="eyebrows" position="2" index = {eyebrows}/>
+          <Part type="eyebrows" position="0" index = {eyebrows}/>
+
+
         </div>
-        <button onClick={randomize}>Randomize </button>
       </div>
     </div>
   )

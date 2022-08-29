@@ -19,7 +19,7 @@ function Avatar({eyes,body,layer_1,layer_2,layer_3,mouths,glasses,hair,earrings,
           <Part type="hats" position="4" index = {hats}/>
           <Part type="eyebrows" position="2" index = {eyebrows}/>
         </div>
-        <button onClick={randomize}>Randomize </button>
+        <button onClick={randomize}>Click me </button>
       </div>
     </div>
   )

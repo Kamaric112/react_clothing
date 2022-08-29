@@ -62,9 +62,9 @@ const handleClick = (e) => {
     <div className="App">
       <Header />
       <div className="total-style">
-        <Avatar eyes = {eyes} body = {body} layer_1 = {layer_1} layer_2 = {layer_2} layer_3 ={layer_3} mouths = {mouths} glasses = {glasses} hair = {hair} earrings = {earrings} hats = {hats} eyebrows= {eyebrows} randomize = {randomize}/>
+        <Avatar eyes = {eyes} body = {body} layer_1 = {layer_1} layer_2 = {layer_2} layer_3 ={layer_3} mouths = {mouths} glasses = {glasses} hair = {hair} earrings = {earrings} hats = {hats} eyebrows= {eyebrows}/>
+        <button onClick={randomize}>Click me </button>
 
-        
         <div>
         <PartList type = "body" total ="17" index = "1" handleClick={(e) => setBody(e.target.src.split('/').pop().split('.')[0])} />
         <PartList type = "eyes" total ="17" index = "1" handleClick={(e) => setEyes(e.target.src.split('/').pop().split('.')[0])}/>
