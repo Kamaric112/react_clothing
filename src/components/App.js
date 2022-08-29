@@ -1,35 +1,33 @@
-import React,{useState} from "react";
+import React from "react";
 import Header from "./Header";
 import "./App.css";
 import Avatar from "./Avatar";
 import PartList from "./PartList";
-import Part from "./Part";
+// import {useState} from "react"
 
-
-
-const total = {
-  body: 17,
-  eyes: 17,
-  hair: 73,
-  mouths: 24,
-  eyebrows: 15,
-  hats: 28,
-  glasses: 17,
-  clothing1: 5,
-  clothing2: 5,
-  clothing3: 9,
-};
+// const total = {
+//   body: 17,
+//   eyes: 17,
+//   hair: 73,
+//   mouths: 24,
+//   eyebrows: 15,
+//   hats: 28,
+//   glasses: 17,
+//   clothing1: 5,
+//   clothing2: 5,
+//   clothing3: 9,
+// };
 
 function App() {
   
 
-const [avatar, setAvatar] = useState("")
-const [part, setPart] = useState("")
+// const [avatar, setAvatar] = useState("")
+// const [part, setPart] = useState("")
 
 const handleClick = (e) => {
   console.log(e.target.src) //change states when clicked corresponding clothing
-  setPart(<Part type="body" position="0" index = "5"/>)
-  setAvatar(<Avatar />)
+//   setPart(<Part type="body" position="0" index = "5"/>)
+//   setAvatar(<Avatar />)
 }
 
 
