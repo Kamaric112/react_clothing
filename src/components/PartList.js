@@ -1,5 +1,4 @@
 import React from 'react'
-import Part from './Part'
 
 
 function PartList({type,index,total,handleClick}) {
@@ -12,12 +11,12 @@ function PartList({type,index,total,handleClick}) {
 
   for (index;index<= total; index++) {
     if ( accessories.includes(type)) {
-      parts.push( <img key= {index} src={`character/accessories/${type}/${index}.png`} width="60px" onClick= {handleClick} />)
+      parts.push( <img key= {index} src={`character/accessories/${type}/${index}.png`} width="60px" onClick= {handleClick} alt= {type}/>)
     } else if ( clothing.includes(type)) {
-      parts.push( <img key= {index} src={`character/clothes/${type}/${index}.png`} width="60px" onClick={handleClick}/>)
+      parts.push( <img key= {index} src={`character/clothes/${type}/${index}.png`} width="60px" onClick={handleClick} alt= {type}/>)
     } 
     else {
-      parts.push( <img key= {index} src={`character/${type}/${index}.png`} width="60px" onClick={handleClick}/>)
+      parts.push( <img key= {index} src={`character/${type}/${index}.png`} width="60px" onClick={handleClick} alt= {type}/>)
     }
   }
 
